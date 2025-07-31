@@ -1,0 +1,164 @@
+/* ===== Base Styling ===== */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-box input[type="text"] {
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-shadow: 0 0 10px #00000055;
+  outline: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* ===== Mode Toggle Button ===== */
+#modeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+#modeToggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* ===== Buttons for Links ===== */
+main a {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+main button {
+  display: block;
+  margin: 5px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #2c2c2c;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+main button:hover {
+  background-color: #3a3a3a;
+}
+
+/* ===== Images ===== */
+main img {
+  display: block;
+  margin: 5px auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.5);
+}
+
+/* ===== Light Mode Overrides ===== */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+body.light-mode .search-box input[type="text"] {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+body.light-mode #modeToggle {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode main button {
+  background-color: #dddddd;
+  color: #000000;
+}
+
+body.light-mode main button:hover {
+  background-color: #c0c0c0;
+}
+.site-footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+  position: relative;
+}
+
+body.light-mode .site-footer {
+  background-color: #fff;
+  color: #000;
+}
+
+body:not(.light-mode) .site-footer {
+  background-color: #111;
+  color: #ccc;
+}
+
+.site-footer .social-icons {
+  margin: 10px 0;
+}
+
+.site-footer .social-icons img {
+  margin: 0 8px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.site-footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.top-btn {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body.light-mode .top-btn {
+  background-color: #000;
+  color: #fff;
+}
